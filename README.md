@@ -65,42 +65,60 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md
 commit 8c928e83589d90a031f811fae52a81be7153e82f
 Author: Martin Atkins <mart@degeneration.co.uk
 Date:   Thu Apr 2 18:04:39 2020 -0700
-``` 
+```
 
 Коммит: 8c928e83589d90a031f811fae52a81be7153e82f.
 
 ---
-6. 
+6. Найдите все коммиты в которых была изменена функция globalPluginDirs.
 
+`git log -S 'func globalPluginDirs'`
+
+```
+commit 65c4ba736375607b6af6c035972f7f151232b6c6
+Author: Valeriy Pastushenko <i@combin.name>
+Date:   Sat May 21 19:53:24 2022 +0300
+...
+
+commit 125eb51dc40b049b38bf2ed11c32c6f594c8ef96
+Author: Alisdair McDiarmid <alisdair@users.noreply.github.com>
+Date:   Thu May 5 10:12:00 2022 -0400
+...
+
+commit 22c121df8631c4499d070329c9aa7f5b291494e1
+Author: Anna Winkler <3526523+annawinkler@users.noreply.github.com>
+Date:   Tue May 3 12:28:41 2022 -0600
+...
+
+commit 7c7e5d8f0a6a50812e6e4db3016ebfd36fa5eaef
+Author: Valeriy Pastushenko <i@combin.name>
+Date:   Fri Sep 3 18:33:10 2021 +0300
+...
+
+commit 35a058fb3ddfae9cfee0b3893822c9a95b920f4c
+Author: Martin Atkins <mart@degeneration.co.uk>
+Date:   Thu Oct 19 17:40:20 2017 -0700
+...
+
+commit c0b17610965450a89598da491ce9b6b5cbd6393f
+Author: James Bardin <j.bardin@gmail.com>
+Date:   Mon Jun 12 15:04:40 2017 -0400
+```
+
+Найдено 6 коммитов, следовательно в наиболее раннем из них  
+c0b17610965450a89598da491ce9b6b5cbd6393f функция создана,  
+а в остальных отредактирована.
 
 ---
+7. Кто автор функции synchronizedWriters?
 
-## `Задание 2`
+`git log -S 'func synchronizedWriters(' --pretty=format:"%h %an %ad"`
 
-### Ответ:
+```
+bdfea50cc8 James Bardin Mon Nov 30 18:02:04 2020 -0500
+5ac311e2a9 Martin Atkins Wed May 3 16:25:41 2017 -0700
+```
 
-### Решение:
-
-![Скриншот 2]()
-
-
----
-
-## `Задание 3`
-
-![Скриншот 3]()
-
-## `Задание 4`
-
-![Скриншот 4]()
+Автор функции synchronizedWriters() — Martin Atkins.
 
 ---
-### Дополнительные задания (со звездочкой*)
-
-
-## `Задание 5`
-
-![Скриншот 5]()
-
-
-
